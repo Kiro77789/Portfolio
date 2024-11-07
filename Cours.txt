@@ -1,0 +1,36 @@
+Cours
+
+de 12 a 20 on passe 
+de 8 a 11.99 c'est discuté au conseil
+de 0 a 7.99 c'est redoublement
+
+horaires
+l/m/j/v 9h00 a 12h30 et 13h30 a 17h00
+mercredi 9h00 a 12h30 et 13h30 a 15h00
+
+L'ISC est ouvert de 8h00 a 19h00 du lundi au vendredi
+
+Astuces: Il faut faire des projets c'est bénéfique pour les connaissances , le prof (Julien) peut nous donner son GitHub pour deux trois projets.
+
+ 
+Metiers
+
+L'architecte il est au courant de tous les appareils sur le réseau et les process par lesquels passent les infos , qu'il connait par cœur aussi
+
+QA 
+
+Il test les codes pour tester les bugs et la qualité du code 
+
+Data Scientist
+
+C'est celui qui traite toutes les données qui résulte de tous les programmes etc...
+
+Mobile: Le site s'adapte a la dimension de l'écran
+Embarqué: souvent codé en C pour la gestion de la mémoire
+IOT: souvent sur des détecteurs de fumée et des doorbells
+IA , DP , ML: Intelligence Artificielle , Deap Learning , et ml jsp
+Devops: Developpeur Operationnel , Middleware , gère les mises en production etc...
+Testing/QA : Ils font des texts pour voirs si le code respecte les attentes du client
+
+
+
