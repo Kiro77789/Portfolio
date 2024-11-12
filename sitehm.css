@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(35, 35, 35, 0.915);
+}
+
+header {
+    background-color: rgb(97, 97, 97);
+}
+
+/* Styles de la barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #4b4b4b;
+    /* Couleur du bouton */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: rgb(97, 97, 97);
+}

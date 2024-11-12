@@ -8,8 +8,9 @@ header {
 
 }
 
+/*Police différente pour le nom et placement spécial*/
 .Nom {
-    font-family: 'comic sans', comic, monospace;
+    font-family: 'comic sans', comic;
     margin-left: 20px;
     font-size: 24px;
     display: flex;
@@ -19,7 +20,7 @@ header {
 
 /* Styles généraux */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier;
     background-color: blanchedalmond;
     margin: 0;
     padding: 0;
@@ -56,11 +57,12 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* animation pour le nom */
 h1 {
     color: black;
     animation-name: animation-couleur;
     /* le nom de mon animation */
-    animation-duration: 8s;
+    animation-duration: 5s;
     /* la durée de chaque itération */
     animation-iteration-count: infinite;
 }
@@ -82,7 +84,7 @@ h1 {
 
 }
 
-
+/*ligne responsable de la responsivité*/
 @media (min-width: 320px) and (max-width: 720px) {
     main {
         flex-direction: column;

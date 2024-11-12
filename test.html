@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header avec Menu et Catégories</title>
+    <link rel="stylesheet" href="shm2.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">MonSite</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher des jeux...">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="header-buttons" id="header-buttons">
+            <button>Accueil</button>
+            <button>Catégories</button>
+            <button>Populaires</button>
+            <button>Connexion</button>
+        </div>
+    </header>
+
+    <!-- Colonne des catégories de jeux -->
+    <aside class="categories">
+        <div class="category">1</div>
+        <div class="category">2</div>
+        <div class="category">3</div>
+        <div class="category">4</div>
+        <div class="category">5</div>
+        <div class="category">6</div>
+        <div class="category">7</div>
+        <div class="category">8</div>
+    </aside>
+    <div class="MenuListe">
+        <ul class="MenuButton">
+            <li>
+                <a href="blackfriday.html">PRODUITS</a>
+                <ul class="deroulant">
+                    <li id="deroulant-li"><a href="#">Ordinateurs Portables</a></li>
+                    <li id="deroulant-li"><a href="#">Cartes Mères</a></li>
+                    <li id="deroulant-li"><a href="#">Cartes Graphiques</a></li>
+                    <li id="deroulant-li"><a href="#">Moniteurs</a></li>
+                    <li id="deroulant-li"><a href="#">Téléphones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const buttons = document.getElementById("header-buttons");
+            buttons.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

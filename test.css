@@ -1,0 +1,138 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+    background-color: #555;
+}
+
+/* Catégories */
+.categories {
+    position: fixed;
+    left: 0px;
+    /* Masqué en dehors de l'écran par défaut */
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in 3s;
+    /* Disparaît après 5 secondes */
+}
+
+
+.category {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    /* Agrandissement au survol */
+}
+
+.MenuListe ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.MenuListe li {
+    position: relative;
+    padding: 30px;
+}
+
+.deroulant {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+.deroulant a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    color: black !important;
+}
+
+.deroulant a:hover {
+    background-color: #898989;
+    color: rgb(223, 57, 84) !important;
+    /*pour forcer la couleur a ce faire */
+}
+
+
+.MenuButton li:hover .deroulant {
+    display: block;
+}

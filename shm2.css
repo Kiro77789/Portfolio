@@ -1,0 +1,182 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #212233E6;
+    color: #ffffff;
+    width: 100%;
+    position: fixed;
+}
+
+.nom {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo {
+    max-width: 30px;
+    height: auto;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    color: #555;
+    background-color: #333;
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    background-color: #333;
+    color: #dadada;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+    background-color: #555;
+}
+
+/* Catégories */
+.categories {
+    position: fixed;
+    left: 0px;
+    /* Masqué en dehors de l'écran par défaut */
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    /* Disparaît après 5 secondes */
+}
+
+
+.category {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: auto;
+}
+
+.imagemenu {
+    width: 30px;
+    align-items: center;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    /* Agrandissement au survol */
+}
+
+
+
+
+.MenuButton li:hover .deroulant {
+    display: block;
+}
+
+body {
+    animation-name: animation-couleur;
+    /* le nom de mon animation */
+    animation-duration: 8s;
+    /* la durée de chaque itération */
+    animation-iteration-count: infinite;
+
+}
+
+.jeux {
+    left: 75px;
+    top: 75px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+    grid-auto-flow: row;
+}
+
+.jeux {
+    margin-top: 75px;
+    margin-left: 150px;
+}
+
+#item1 {
+    grid-column: 1 / span 2;
+    grid-rows: 1 / span 2;
+}
+
+.imagejeu {
+    max-width: fit-content;
+}
+
+
+
+
+@media (max-width:910px) {
+    .search-bar {
+        visibility: hidden
+    }
+}
+
+@keyframes animation-couleur {
+    0% {
+        background-color: #212233E6;
+    }
+
+    50% {
+        background-color: #333333;
+    }
+
+    100% {
+        background-color: #212233E6;
+    }
+
+}
