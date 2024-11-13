@@ -1,3 +1,5 @@
+ Liste auto pop 
+ 
  <div class="MenuListe">
         <ul class="MenuButton">
             <li>
@@ -12,3 +14,27 @@
             </li>
         </ul>
     </div>
+
+Liste de jeu 
+
+<div class="jeux">
+
+        <img src="Images/Bloxd.io.png" alt="1" class="imagejeug" id="item1">
+        <div class="grid1"><img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item2">
+            <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item3">
+            <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item4">
+            <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item5">
+        </div>
+
+        <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item3">
+        <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item4">
+        <img src="Images/Bloxd.io.png" alt="1" class="imagejeu" id="item5">
+    </div>
+
+    nouvelle liste pour la suite de jeux
+
+     <section class="game-suite"></section>
+    <div class="game-simple">Jeu 1</div>
+    <div class="game-simple">Jeu 1</div>
+    <div class="game-simple">Jeu 1</div>
+    <div class="game-simple">Jeu 1</div>

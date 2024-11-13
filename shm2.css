@@ -95,6 +95,19 @@ header {
     /* Disparaît après 5 secondes */
 }
 
+.categories::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.categories::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
 
 .category {
     background-color: #555;
@@ -120,9 +133,7 @@ header {
 
 
 
-.MenuButton li:hover .deroulant {
-    display: block;
-}
+
 
 body {
     animation-name: animation-couleur;
@@ -133,7 +144,7 @@ body {
 
 }
 
-.jeux {
+/*.jeux {
     left: 75px;
     top: 75px;
     display: grid;
@@ -144,21 +155,125 @@ body {
 }
 
 .jeux {
+    display: flex;
     margin-top: 75px;
     margin-left: 150px;
 }
 
-#item1 {
-    grid-column: 1 / span 2;
-    grid-rows: 1 / span 2;
-}
 
 .imagejeu {
-    max-width: fit-content;
+    max-width: 100px;
+    max-height: auto;
 }
 
+.grid1 {
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 75px 75px;
+    gap: 0px 20px;
+}
+
+.item1 {
+    grid-column: 1 / 1;
+}*/
+
+.game-gallery {
+    display: flex;
+    overflow-x: auto;
+    padding-left: 120px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.game-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.game-gallery::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.game-gallery::-webkit-scrollbar-track {
+    background-color: #eee;
 
 
+}
+
+/* Section d'un jeu principal avec grille */
+.game-section {
+
+    min-width: 300px;
+    /* Ajustable selon la taille souhaitée */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Jeu principal en grand */
+.game-large {
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+/* Grille de 4 jeux en dessous */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.game-small {
+    width: 100%;
+    height: 100px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.game-small:hover {
+    transform: scale(1.05);
+}
+
+.game-large:hover {
+    transform: scale(1.05);
+}
+
+/*.game-suite {
+    overflow-x: auto;
+}
+
+.game-simple {
+    width: 100%;
+    height: 100px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.game-simple:hover {
+    transform: scale(1.05);
+    scroll-behavior: smooth;
+
+}*/
 
 @media (max-width:910px) {
     .search-bar {
